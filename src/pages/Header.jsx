@@ -1,8 +1,10 @@
 import './Header.css';
 import Cart from '../assets/images/cart.png';
 import { NavLink } from 'react-router';
+import { useState } from 'react';
 
 export function Header() {
+  const [open, setOpen] = useState(false);
   return (
     <div className='header'>
       <div className='logo'>pizzashop</div>
@@ -42,6 +44,19 @@ export function Header() {
         </button>
         <button className='cart-img-container'>
           <img className='cart-img' src={Cart} />
+        </button>
+
+        <button
+          className={`hamburger ${open ? "active" : ""}`}
+          aria-expanded={open}
+          aria-label={open ? "Close menu" : "Open menu"}
+          onClick={() => setOpen(!open)}
+        >
+          <span className="hamburger-box">
+            <span className="hamburger-line top"></span>
+            <span className="hamburger-line mid"></span>
+            <span className="hamburger-line bot"></span>
+          </span>
         </button>
       </div>
 

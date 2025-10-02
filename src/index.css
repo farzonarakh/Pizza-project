@@ -2,3 +2,8 @@ body {
   background: linear-gradient(245.71deg, #1E0C00 4.96%, #1F0700 33.7%, #170A00 68.41%, #1E0D00 96.42%);
 }
 
+@media (max-width: 500px) {
+  body {
+    background: linear-gradient(245.71deg, #1C0C00 4.96%, #1C0700 33.7%, #140900 68.41%, #1C0C00 96.42%);
+  }
+}

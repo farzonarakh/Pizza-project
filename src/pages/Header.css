@@ -1,8 +1,13 @@
 .header {
-  height: 48px;
+  width: auto;
   display: flex;
   justify-content: space-between;
-  padding: 48px 129px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  margin-top: 48px;
 }
 
 .header .logo {
@@ -19,7 +24,6 @@
 .header .header-middle-section {
   display: flex;
   justify-content: space-between;
-  padding: 15px;
   gap: 80px;
   font-family: 'Muller';
   font-weight: 400;
@@ -89,4 +93,109 @@
   background: linear-gradient(261.69deg, #FF6432 12.12%, #FFA228 86.72%);
   border: none;
   border-radius: 20px;
+}
+
+.header .hamburger {
+  display: none;
+}
+
+.header .side-menu {
+  display: none;
+}
+
+/*For phones*/
+@media (max-width: 500px) {
+  .header {
+    background: linear-gradient(245.71deg, #1C0C00 4.96%, #1C0700 33.7%, #140900 68.41%, #1C0C00 96.42%);
+    margin-top: 30px;
+  }
+
+  .header .logo {
+    font-size: 23.76px;
+  }
+
+  .header .header-middle-section {
+    display: none;
+  }
+
+  .header .login-button {
+    display: none;
+  }
+
+  .header .hamburger {
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: inline-grid;
+    place-items: center;
+  }
+
+  /* three-line box */
+  .header .hamburger-box {
+    width: 27.72px;
+    height: 20px;
+    position: relative;
+  }
+
+  /* each line */
+  .header .hamburger-line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1.8px;
+    background: linear-gradient(261.69deg, #FF612E 12.12%, #FFA32B 86.72%);
+    transition: transform 0.25s ease, opacity 0.2s ease;
+  }
+
+  .header .hamburger-line.top {
+    top: 0;
+  }
+
+  .header.hamburger-line.mid {
+    top: 8px;
+  }
+
+  .header .hamburger-line.bot {
+    bottom: 0;
+  }
+
+  /* animation when active */
+  .header .hamburger.active .hamburger-line.top {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .header .hamburger.active .hamburger-line.mid {
+    opacity: 0;
+  }
+
+  .header .hamburger.active .hamburger-line.bot {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .header .overlay {
+    position: fixed;
+    inset: 0;
+    background: #1C0C00;
+  }
+}
+
+@media (max-width: 900px) {
+  .header {
+    max-width: 900px;
+  }
+
+  .header .logo {
+    font-size: 28px;
+  }
+
+  .header .login-button {
+    padding: 0 5px;
+  }
+
+  .header .header-middle-section {
+    justify-content: space-between;
+    gap: 15px;
+  }
 }
