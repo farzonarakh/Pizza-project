@@ -4,10 +4,8 @@
   justify-content: space-between;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-  margin-left: auto;
-  margin-right: auto;
   align-items: center;
-  margin-top: 48px;
+  margin: 30px;
 }
 
 .header .logo {
@@ -103,11 +101,10 @@
   display: none;
 }
 
-/*For phones*/
 @media (max-width: 500px) {
   .header {
     background: linear-gradient(245.71deg, #1C0C00 4.96%, #1C0700 33.7%, #140900 68.41%, #1C0C00 96.42%);
-    margin-top: 30px;
+    margin: 27px 24px;
   }
 
   .header .logo {
@@ -181,13 +178,14 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   .header {
     max-width: 900px;
+    margin: 20px;
   }
 
   .header .logo {
-    font-size: 28px;
+    font-size: 24px;
   }
 
   .header .login-button {
@@ -197,5 +195,11 @@
   .header .header-middle-section {
     justify-content: space-between;
     gap: 15px;
+  }
+}
+
+@media (min-width: 1253px) {
+  .header {
+    margin: 48px 129px;
   }
 }
