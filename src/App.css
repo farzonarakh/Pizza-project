@@ -1,6 +1,3 @@
-@font-face {
-  font-family: 'Muller';
-  src: url('../src/assets/Fonts/MullerNarrow-Trial-Medium-iF6617a012bb9e6.otf');
-  src: url('../src/assets/Fonts/MullerNarrow-Trial-ExtraBold-iF6617a012b2768.otf');
-  src: url('../src/assets/Fonts/MullerNarrow-Trial-Regular-iF6617a012bb9e6.otf');
+body {
+  font-family: 'Manrope', sans-serif;
 }

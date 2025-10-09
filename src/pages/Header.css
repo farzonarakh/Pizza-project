@@ -6,10 +6,10 @@
   padding-right: 0.5rem;
   align-items: center;
   margin: 30px;
-}
+  }
 
 .header .logo {
-  font-family: 'Muller';
+  font-family: 'Manrope';
   font-weight: 800;
   font-size: 34.06px;
   line-height: 110.00000000000001%;
@@ -23,11 +23,10 @@
   display: flex;
   justify-content: space-between;
   gap: 80px;
-  font-family: 'Muller';
+  font-family: 'Manrope';
   font-weight: 400;
   font-size: 17.88px;
   line-height: 110.00000000000001%;
-  font-style: 'Regular';
 }
 
 .header .header-link {
@@ -38,7 +37,7 @@
 }
 
 .header a.active .header-link {
-  font-family: 'Muller';
+  font-family: 'Manrope';
   font-weight: 400;
   font-size: 17.88px;
   line-height: 110.00000000000001%;
@@ -76,9 +75,8 @@
   border-bottom-left-radius: 700px;
   background: linear-gradient(261.69deg, #FF5D29 12.12%, #FE9C1C 86.72%);
   border: none;
-  font-family: 'Muller';
+  font-family: 'Manrope';
   font-weight: 500;
-  font-style: 'Medium';
   font-size: 17.74px;
   line-height: 110.00000000000001%;
   letter-spacing: 0%;
