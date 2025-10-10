@@ -74,14 +74,14 @@
   opacity: 0.5;
 }
 
-.home-page .ellipse{
+.home-page .ellipse {
   width: 81px;
   height: 81px;
   border-radius: 50%;
   border-width: 3px;
   background: #1D0800;
   border: 3px solid transparent;
-  background: 
+  background:
     linear-gradient(245.71deg, #1E0C00 4.96%, #1F0700 33.7%, #170A00 68.41%, #1E0D00 96.42%) padding-box,
     linear-gradient(261.84deg, #FFA631 7.69%, #FF6939 81.11%) border-box;
   border-radius: 100px;
@@ -127,7 +127,7 @@
 
 .home-page .pizza-menu {
   border: 2px solid transparent;
-  background: 
+  background:
     linear-gradient(245.71deg, #1E0C00 4.96%, #1F0700 33.7%, #170A00 68.41%, #1E0D00 96.42%) padding-box,
     linear-gradient(261.84deg, #FFA631 7.69%, #FF6939 81.11%) border-box;
   border-radius: 100px;
@@ -173,7 +173,7 @@
   height: auto;
   top: 42px;
   right: 48px;
-  filter: drop-shadow(0px 11px 17px 0px #1108007A) ;
+  filter: drop-shadow(0px 11px 17px 0px #1108007A);
   z-index: 2;
   rotate: -4.2 deg;
 }
@@ -182,10 +182,9 @@
   width: 212.72089926265px;
   height: auto;
   filter: drop-shadow(-2px -15px 17px 0px #1108007A);
-  rotate: 15.28 deg;
   position: absolute;
-  bottom: -201px;
-  right: 474px;
+  bottom: 75px;
+  right: 460px;
 }
 
 .home-page .right-section .background-word {
@@ -203,5 +202,25 @@
   top: 35px;
   left: 1024px;
   border-width: 0.91px;
+  position: absolute;
+}
+
+.home-page .vector2 {
+  width: 88.35115838827582;
+  height: 55.460193788570194;
+  top: 220px;
+  left: 524px;
+  border-radius: 66.16px;
+  border-width: 2.36px;
+  rotate: 20.81 deg;
+  margin-left: 12px;
+}
+
+.home-page .vector1 {
+  width: 189.67039392667627;
+  height: 66.221130032156;
+  top: 788px;
+  left: 536px;
+  border-radius: 64.98px;
   position: absolute;
 }

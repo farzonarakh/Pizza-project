@@ -8,6 +8,9 @@ import PizzaSlice from '../assets/images/pizza-slice.png';
 import Lightning from '../assets/images/Lightning.png';
 import PizzaWord from '../assets/images/pizza-word.png';
 import Polygon from '../assets/images/polygon 1.png'
+import Vector2 from '../assets/images/Vector 2.png';
+import Vector1 from '../assets/images/Vector 2.png'
+
 
 export function HomePage() {
   return (
@@ -18,8 +21,12 @@ export function HomePage() {
           <div className="background-word">
             <img src={PizzaWord} />
           </div>
+          <div>
+            <img className="vector1" src={Vector1} />
+          </div>
           <h1>
             The Fastest 
+            <img className="vector2" src={Vector2} />
             <br />
             Pizza 
             <span >
