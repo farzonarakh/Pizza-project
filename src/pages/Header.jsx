@@ -4,11 +4,12 @@ import { NavLink } from 'react-router';
 import { useState } from 'react';
 
 export function Header() {
+
   const [open, setOpen] = useState(false);
   return (
     <div className='header'>
       <div className='logo'>pizzashop</div>
-      <div className='header-middle-section'>
+      <div className={`header-middle-section ${open ? "open" : ""} `}>
         <NavLink to="/" end
           className={({ isActive }) => (
             isActive ? "active" : ""
@@ -52,7 +53,7 @@ export function Header() {
           aria-label={open ? "Close menu" : "Open menu"}
           onClick={() => setOpen(!open)}
         >
-          <span className="hamburger-box">
+          <span className="hamburger-box" >
             <span className="hamburger-line top"></span>
             <span className="hamburger-line mid"></span>
             <span className="hamburger-line bot"></span>

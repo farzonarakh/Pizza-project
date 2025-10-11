@@ -1,17 +1,16 @@
 .header {
-  width: auto;
+  width: 82.87%;
   display: flex;
   justify-content: space-between;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
   align-items: center;
-  margin: 30px;
+  margin: 3rem auto;
+  position: relative;
   }
 
 .header .logo {
   font-family: 'Manrope';
   font-weight: 800;
-  font-size: 34.06px;
+  font-size: 2.12rem;
   line-height: 110.00000000000001%;
   background: linear-gradient(261.69deg, #FF6432 12.12%, #FFA228 86.72%);
   background-clip: text;
@@ -22,11 +21,12 @@
 .header .header-middle-section {
   display: flex;
   justify-content: space-between;
-  gap: 80px;
+  gap: 1em;
   font-family: 'Manrope';
   font-weight: 400;
-  font-size: 17.88px;
+  font-size: 1.12rem;
   line-height: 110.00000000000001%;
+  width: 37.43%;
 }
 
 .header .header-link {
@@ -39,8 +39,6 @@
 .header a.active .header-link {
   font-family: 'Manrope';
   font-weight: 400;
-  font-size: 17.88px;
-  line-height: 110.00000000000001%;
   background: linear-gradient(261.69deg, #FF6432 12.12%, #FFA228 86.72%);
   background-clip: text;
   color: transparent;
@@ -64,11 +62,13 @@
 
 .header .left-section {
   display: flex;
-  height: 40px;
-  gap: 26px;
+  width: 18.28%;
+  gap: 11.35%;
+  justify-content: center;
 }
 
 .header .login-button {
+  width: 71.2%;
   border-top-left-radius: 700px;
   border-top-right-radius: 675px;
   border-bottom-right-radius: 700px;
@@ -77,18 +77,19 @@
   border: none;
   font-family: 'Manrope';
   font-weight: 500;
-  font-size: 17.74px;
+  font-size: 1.11rem;
   line-height: 110.00000000000001%;
   letter-spacing: 0%;
   color: #FFFFFF;
-  padding: 6px 56px;
+  padding: 4.5%;
+  height: auto;
 }
 
 .header .cart-img-container {
-  width: 40px;
   background: linear-gradient(261.69deg, #FF6432 12.12%, #FFA228 86.72%);
   border: none;
-  border-radius: 20px;
+  border-radius: 50%;
+  max-height: 40px;
 }
 
 .header .hamburger {
@@ -99,18 +100,35 @@
   display: none;
 }
 
-@media (max-width: 500px) {
-  .header {
-    background: linear-gradient(245.71deg, #1C0C00 4.96%, #1C0700 33.7%, #140900 68.41%, #1C0C00 96.42%);
-    margin: 27px 24px;
-  }
-
-  .header .logo {
-    font-size: 23.76px;
-  }
+@media (max-width: 800px) {
 
   .header .header-middle-section {
-    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 300px;
+    height: 40vh;
+    background: #210A01;
+    padding: 50px 20px;
+    z-index: 5;
+    transition: all .55s ease;
+  }
+
+  .header .header-middle-section a {
+    display: block;
+    margin: 2rem 0;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .header a.active .header-link::after{
+    left: -1rem;
+    top: 35%;
+  }
+
+  .header .header-middle-section.open {
+    right: 0;
   }
 
   .header .login-button {
@@ -125,6 +143,7 @@
     cursor: pointer;
     display: inline-grid;
     place-items: center;
+    z-index: 5;
   }
 
   /* three-line box */
@@ -173,31 +192,5 @@
     position: fixed;
     inset: 0;
     background: #1C0C00;
-  }
-}
-
-@media (max-width: 950px) {
-  .header {
-    max-width: 900px;
-    margin: 20px;
-  }
-
-  .header .logo {
-    font-size: 24px;
-  }
-
-  .header .login-button {
-    padding: 0 5px;
-  }
-
-  .header .header-middle-section {
-    justify-content: space-between;
-    gap: 15px;
-  }
-}
-
-@media (min-width: 1253px) {
-  .header {
-    margin: 48px 129px;
-  }
+  }  
 }
