@@ -21,14 +21,12 @@ export function HomePage() {
           <div className="background-word">
             <img src={PizzaWord} />
           </div>
-          <div>
-            <img className="vector1" src={Vector1} />
-          </div>
           <h1>
-            The Fastest 
-            <img className="vector2" src={Vector2} />
-            <br />
-            Pizza 
+            <div className="the-fastest">
+              The Fastest
+              <img className="vector2" src={Vector2} />
+            </div>
+            Pizza
             <span >
               <img className="lightning" src={Lightning} alt="red and orange cartoon lightning" />
             </span>
@@ -42,8 +40,8 @@ export function HomePage() {
             <div className="cooking-video">
               <img className="video" src={CookingProcess} alt="Freshly baked pizza on a white plate with chicken wings spices on the side" />
               <div className="ellipse">
-              <img className="polygon" src={Polygon} alt="play-icon" />
-            </div>
+                <img className="polygon" src={Polygon} alt="play-icon" />
+              </div>
             </div>
           </div>
           <div className="split-buttons">
@@ -53,6 +51,7 @@ export function HomePage() {
             <NavLink to='/menu' className='pizza-menu'>
               <span className="pizza-menu-text">Pizza-Menu</span>
             </NavLink>
+            <img className="vector1" src={Vector1} />
           </div>
         </div>
         <div className="right-section">

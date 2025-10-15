@@ -36,6 +36,13 @@
   display: inline-block;
 }
 
+.header .header-link:hover {
+  background: linear-gradient(261.69deg, #FF6432 12.12%, #FFA228 86.72%);
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
 .header a.active .header-link {
   font-family: 'Manrope';
   font-weight: 400;
@@ -107,7 +114,7 @@
     position: absolute;
     top: 100%;
     right: -100%;
-    width: 300px;
+    width: 88.8%;
     height: 40vh;
     background: #210A01;
     padding: 50px 20px;
